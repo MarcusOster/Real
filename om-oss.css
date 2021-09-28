@@ -1,0 +1,263 @@
+/** FOUNDATION - Här gör vi reset m.m. **/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #000000;
+}
+
+/** BASE - här sätter vi grunden för vårt dokument **/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;  /* = 1 * 16px */
+    line-height: 1.5;
+    font-family: 'Karla', sans-serif;
+}
+/*Styr rubriker */
+h1 {
+    font-size: 3rem; /* = 3 * 16px */
+}
+
+h2 {
+    font-size: 2.5rem; /* = 2.5 * 16px */
+}
+
+h3 {
+    font-size: 2rem; /* = 2 * 16px */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Spectral', serif;
+    line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+p,
+img {
+    margin-bottom: .5em;
+}
+
+ul {
+    list-style: none;
+}
+/* Styr bilder*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var( --primary-color );
+} 
+a:hover {
+    font-weight: 600;
+}
+
+input,
+textarea,
+button {
+    display: block;
+    padding: .5em 1em;
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+textarea {
+    height: 300px;
+}
+
+input[type="submit"],
+button {
+    background-color: rgb(8, 108, 8);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/** MODULE - Här börjar vi med vår layout **/
+
+/** SITE HEADER **/
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: 1fr 3rem;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        " L B "
+        " M M "
+    ;
+    align-items: center; /* centrera objekten vertikalt i ytorna. */
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+.huvudlogga {
+    text-align: center;
+    justify-self: center;
+}
+/** BRAND **/
+.brand {
+    grid-area: L;
+}
+
+/** SITE NAVIGATION **/
+.site-navigation {
+    grid-area: M;
+    display: none;
+}
+/* Toggle Button */
+.toggle-btn {
+    grid-area: B;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    padding: 0 .5em;
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+
+}
+
+.toggle-btn .bars,
+.toggle-btn .bars::before,
+.toggle-btn .bars::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(204, 204, 204);
+}
+.toggle-btn .bars::before,
+.toggle-btn .bars::after {
+    content: '';
+}
+
+.toggle-btn .bars::before {
+    position: relative;
+    top: -10px;
+}
+
+.toggle-btn .bars::after {
+    position: relative;
+    top: 8px;
+}
+
+/* Checkbox */
+.toggle-menu {
+    display: none;
+} 
+.toggle-menu:checked + .site-navigation {
+    display: block;
+}
+
+/** Menu **/
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu-item {
+    /* flex-basis: 100%; */
+}
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    color: rgb(240, 240, 240);
+    background-color: rgb(59, 0, 0);
+    margin: .5rem;
+}
+.menu-item.active a {
+    background-color: rgb(255, 255, 255);
+}
+.menu-item a:hover {
+    color: #000;
+    background-color: rgb(219, 219, 219);
+}
+.menu-item1 a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    color: rgb(240, 240, 240);
+    background-color: rgb(59, 0, 0);
+    margin: .5rem;
+}
+.menu-item1.active a {
+    background-color: rgb(255, 255, 255);
+}
+.menu-item1 a:hover {
+    color: #000;
+    background-color: rgb(219, 219, 219);
+}
+
+/* Gömma kundvagn*/
+@media (max-width:992px) {
+    .cart {
+        display: none;
+    }
+}
+
+
+/*** SITE FOOTER ***/
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 2rem;
+    
+}
+.site-footer a {
+    color: #fff;
+}
+/** kolumner med grid **/
+.site-footer .grid-container {
+    display: grid;
+    gap: 1em;
+}
+
+.social-links {
+    display: flex;
+    margin: -1em;
+    justify-content: space-evenly;
+}
+.social-links a {
+    padding: 1em;
+    text-decoration: none;
+}
+.social-links i {
+    margin-right: .5em;
+}
+
+/** FEATURES **/
+.features {
+    padding: 2em 1em;
+}
+
+.card {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    background-color: #eee;
+    padding: 1em;
+    margin:auto;
+}
+
+
+
