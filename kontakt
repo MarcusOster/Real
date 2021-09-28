@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Choklad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Grund-CSS -->
+    <link rel="stylesheet" href="./css/kontakt.css">
+    <!-- Tablet-CSS -->
+    <link rel="stylesheet" media="(min-width:668px)" href="./css/mobile.css">
+    <!-- Laptop-CSS -->
+    <link rel="stylesheet" media="(min-width:992px)" href="./css/laptop.css">
+    <!-- Desktop-CSS -->
+    <link rel="stylesheet" media="(min-width:1200px)" href="./css/desktop.css">
+</head>
+<body class="site">
+    <!-- <div class="site"> -->
+
+        <body class="site">
+            <!-- <div class="site"> -->
+        
+                <header class="site-header">
+                    
+                        <div class="huvudlogga">
+                            <a href="http://127.0.0.1:5501/JMC/startsida.html">
+                                <img src="./bilder/Logga.jpg" alt="Logga">
+                            </a>
+                    </div>
+        
+        
+               
+                    <input type="checkbox" id="toggle-menu" class="toggle-menu">
+                            <nav class="site-navigation">
+                                
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="./praliner.html">Praliner</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./om-oss.html">Om oss</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./kontakt.html">Kontakt</a>
+                                    </li>
+                                    <li class="menu-item1">
+                                        <a href="./kundvagn.html">Kundvagn</a>
+                                    </li>
+
+                                    <li class="cart">
+                                        <a href="./kundvagn.html">
+                                            <i class="fas fa-fw fa-2x fa-shopping-cart"></i>
+                                        </a>
+                
+                                    </li>
+                                </ul>
+                            
+                            </nav>
+        
+        
+                    <label class="toggle-btn" for="toggle-menu">
+                        <span class="bars"></span>
+                    </label>
+                </header>
+                <!--Sidkropp-->
+                        
+                <div class="flex-container">
+                    <article id="card-1" class="card">
+                        <h2>Våra kontakt uppgifter</h2>
+                        </a>
+                        <p class="card-text">Mail: Msterdahl@gmail.com</p>
+                        <p class="card-text">Nummer: 0733673929 </p>
+
+                        <ul><p class="card-text">Om ni inte får tag på oss vänligen fyll i formuläret</p></ul>
+                    </article>
+                </div>
+
+        
+                <section class="contact-cta">
+                    <h2>Kontakta oss</h2>
+                    <p>Vi hör av oss så fort vi kan!</p>
+                    
+                    <form>
+                        <label for="name">Ditt Namn</label>
+                        <input id="name" required name="namn" type="text">
+                        <label for="name">Din Mail</label>
+                        <input id="mail" required name="mail" type="mail">
+                        <label>
+                            Ditt meddelande
+                            <textarea name="meddelande"></textarea>
+                        </label>
+
+                        <button type="submit">Skicka</button>
+                    </form>
+                </section>
+        
+                <footer class="site-footer">
+                    <div class="container flex-container">
+                        
+                        <div class="socials">
+                            <ul class="social-links">
+                                <li>
+                                    <a href="https://facebook.com">
+                                        <i class="fab fa-fw fa-facebook-f"></i> Facebook
+                                    </a>
+                                </li>
+                                <li><a href="https://instagram.com"><i class="fab fa-fw fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://www.hitta.se/kartan/pl/Getporsv%C3%A4gen%2013/1011834558!~57.70110,13.01269,14z/tr!i=BdTmItZP/search!i=1011834558!q=Getporsv%C3%A4gen%2013!t=single!st=plc!ai=1011834558!aic=57.70110:13.01269"><i class="fas fa-fw fa-map-marked"></i> Hitta hit</a></li>
+                            </ul>
+                        </div>
+        
+
+                    </div>
+        
+                </footer>
+            
+            <!-- </div> -->
+        </body>
+        </html>
