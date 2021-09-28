@@ -1,0 +1,148 @@
+html {
+    font-size: 20px;
+}
+
+/** SITE HEADER **/
+.huvudlogga {
+    text-align: center;
+    justify-self: center;
+    max-width: 100%;
+}
+.site-navigation a{
+    color: rgb(185, 185, 185);
+}
+
+.site-navigation {
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    padding: 1px;
+    margin: 1px;
+    background-color: rgb(20, 7, 7);
+}
+
+.toggle-btn {
+    display: none;
+}
+.menu {
+    flex-direction: row;
+    position: relative;
+}
+
+
+.cart {
+    margin-left: 2em;
+    padding: 0.5rem 1.5rem;
+    float: right;
+}
+.cart:hover > div,
+.cart:focus-within > div {
+    display: block;
+}
+.cart > div {
+    display: none;
+    position: absolute;
+    right: 10px;
+    min-width: 250px;
+    padding: 1em;
+    background-color: rgb(145, 20, 20);
+    border: 1px solid rgb(0, 0, 0);
+}
+.cart > div ul {
+    margin-bottom: 1em;
+}
+.menu-item1 {
+    display: none;
+}
+
+
+/** HERO **/
+
+
+
+
+
+
+/* Praliner */
+.produktlista {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.produktlista::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.product {
+flex-basis: 100%;
+text-align: center;
+background-color: #eee;
+padding-top: 20px;
+height: 100%;
+display: flex;
+min-height: 500px;
+flex-direction: column;
+align-items: space-between;
+}
+.product+.product {
+    margin-left: 20px;
+}
+.product2 {
+    background-color: rgb(141, 141, 141);
+}
+.product3 {
+}
+.produktbild {
+    height: 350px;
+}
+.produktbild img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/** IMAGE CONTENT **/
+.image-content {
+    flex-direction: row;
+    padding: 4em 4em;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #000;
+}
+.image-content:nth-of-type(odd) {
+    background-color: rgb(199, 195, 195);
+}
+
+
+.image-content .content {
+    padding: 0;
+    border: 0;
+}
+.imageom {
+    max-width: 50%;
+    margin: auto;
+}
+.flex-container {
+    max-width: 1200px;
+    
+    margin: auto;
+}
+
+/** SITE FOOTER **/
+.site-footer .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+img {
+    display: block;     /* hjälper till ibland, ej helt nödvändig */
+        /* fyller ut bilden till 100% av ytan oavsett storlek
+    max-width: 20%;    /* fyller ut bilder till 100% av ytan om bildens storlek tillåter */
+ 
+}
